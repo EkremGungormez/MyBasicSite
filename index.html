@@ -52,7 +52,6 @@
 							</ul>
 						</div>
 					</div>
-					
 					<div class="subproduct">
 						<h3>
 							Yaris
@@ -94,7 +93,6 @@
 				</div>
 			</div>
 			<div id="dvfoot">
-			
 				<table border="1" id="fiyat-listesi">
 					<caption>Fiyat Listesi</caption>
 					<thead>
@@ -120,9 +118,9 @@
 					<table id ="TblDeger">
 						<thead><b>Değerlendirme</b></thead>
 						<tbody>
-							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" id= "isim" /><br/></td></tr>
-							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" /></td></tr>
-							<tr><td>Sayfa Değerlendirme Notu</td><td id="cmb">
+							<tr><td class="formtd" >Adınız</td><td class="formtd"><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" id= "isim" /><br/></td></tr>
+							<tr><td class="formtd">Mesleğiniz</td><td class="formtd"><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" /></td></tr>
+							<tr><td class="formtd">Sayfa Değerlendirme Notu</td><td id="cmb" class="formtd">
 							<select id="not">
 								<option>1</option>
 								<option>2</option>
@@ -131,10 +129,10 @@
 								<option>5</option>
 							</select></td></tr>
 							<tr>
-								<td id="cmnt">Yorum</td><td><textarea  rows="5" cols="20" id="yorum"></textarea></td></tr>
+								<td id="cmnt" class="formtd">Yorum</td><td class="formtd"><textarea  rows="5" cols="20" id="yorum"></textarea></td></tr>
 							<tr>
-								<td></td>
-								<td><button type="button" onclick="ShowInsertedValues()">Gönder</button></td>
+								<td class="formtd"></td>
+								<td class="formtd"><button type="button" onclick="ShowInsertedValues()">Gönder</button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -157,8 +155,8 @@
 				var _not = document.getElementById("not").value;
 				var _yorum = document.getElementById("yorum").value;
 								
-				document.getElementById("pPano").innerHTML = "<b>Girdiğiniz Değerler</b>;<br/>" + 
-															 "<b>İsim </b>: " + _isim + "<br/>" + 
+				document.getElementById("pPano").innerHTML = "<b>Girdiğiniz Değerler;</b><br/>" + 
+															 "<b>İsim </b>  : " + _isim + "<br/>" + 
 															 "<b>Meslek :</b> " + _meslek + "<br/>" + 
 															 "<b>Not : </b>" + _not + "<br/>" + 
 															 "<b>Yorum :</b> " + _yorum + "<br/>";
