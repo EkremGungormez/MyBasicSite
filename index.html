@@ -120,10 +120,10 @@
 					<table id ="TblDeger">
 						<thead><b>Değerlendirme</b></thead>
 						<tbody>
-							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" title ="Ekrem" id= "isim" /><br/></td></tr>
-							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" title ="Matematik Mühendisi" /></td></tr>
+							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" id= "isim" /><br/></td></tr>
+							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" /></td></tr>
 							<tr><td>Sayfa Değerlendirme Notu</td><td id="cmb">
-							<select name="not">
+							<select id="not">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -131,25 +131,38 @@
 								<option>5</option>
 							</select></td></tr>
 							<tr>
-								<td id="cmnt">Yorum</td><td><textarea  rows="5" cols="20" id="txtcmnt"></textarea></td></tr>
+								<td id="cmnt">Yorum</td><td><textarea  rows="5" cols="20" id="yorum"></textarea></td></tr>
 							<tr>
 								<td></td>
-								<td><button type="button" onclick="disp_cmnt()">Gönder</button></td>
+								<td><button type="button" onclick="ShowInsertedValues()">Gönder</button></td>
 							</tr>
 						</tbody>
 					</table>
 					
-					<p id = "isimtxt"></p>
-					<p id = "cmnt1"></p>
+					<div id="dvPano">
+						<input type="hidden" id="hazirlayanAdi" value="Ekrem Güngörmez" />
+						<input type="hidden" id="hazirlayanMeslegi" value="Matematik Mühendisi" />
+						<p id="pPano"></p>
+					</div>
 				</form>
 			</div>
 		</div>	
 		<script type="text/javascript">
-			alert("Bu sayfa " + document.getElementById("meslek").title + " " + document.getElementById("isim").title + " tarafından yapılmıştır.");
-			function disp_cmnt()
+			alert("Bu sayfa " + document.getElementById("hazirlayanMeslegi").value + " " + document.getElementById("hazirlayanAdi").value + " tarafından yapılmıştır.");
+			
+			function ShowInsertedValues()
 			{
-				document.getElementById("isimtxt").innerHTML = document.getElementById("isim").value;
-				document.getElementById("cmnt1").innerHTML = document.getElementById("txtcmnt").value;
+				var _isim = document.getElementById("isim").value;
+				var _meslek = document.getElementById("meslek").value;
+				var _not = document.getElementById("not").value;
+				var _yorum = document.getElementById("yorum").value;
+								
+				document.getElementById("pPano").innerHTML = "Girdiğiniz Değerler;<br/>" + 
+															 "İsim : " + _isim + "<br/>" + 
+															 "Meslek : " + _meslek + "<br/>" + 
+															 "Not : " + _not + "<br/>" + 
+															 "Yorum : " + _yorum + "<br/>";
+															 
 			}
 		</script>
 	</body>
