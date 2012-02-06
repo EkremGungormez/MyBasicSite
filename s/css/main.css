@@ -5,6 +5,7 @@ h2{font-family:verdana; color :#006D4C;font-family:georgia;font-size:150%;}
 h3{font-family:verdana; color :#707ED7 ; margin:5px auto;}
 q{color:#27A7F6; line-height:1.4em;font-style:italic; font-family:Lucida Sans Unicode;font-size:1em;}
 p{font-family:calibri;color:#024E68; line-height:1.3em; padding:0px;text-indent:30px;margin:2px auto;}
+p#pPano{text-indent:0px;}
 i{font-style:italic;}
 b{font-weight:bold;}
 img{border:1px solid #024E68;}
