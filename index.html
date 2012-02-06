@@ -121,8 +121,8 @@
 					<table id ="TblDeger">
 						<thead><b>Değerlendirme</b></thead>
 						<tbody>
-							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" name ="Ekrem" id= "isim" /><br/></td></tr>
-							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" name ="Matematik Mühendisi" /></td></tr>
+							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" title ="Ekrem" id= "isim" /><br/></td></tr>
+							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" title ="Matematik Mühendisi" /></td></tr>
 							<tr><td>Sayfa Değerlendirme Notu</td><td id="cmb">
 							<select name="not">
 								<option>1</option>
@@ -145,7 +145,7 @@
 			<p id = "cmnt1"></p>
 		</div>	
 		<script type="text/javascript">
-			alert("Bu sayfa " + document.getElementById("meslek").name + " " + document.getElementById("isim").name +" "+ "tarafından yapılmıştır.");
+			alert("Bu sayfa " + document.getElementById("meslek").title + " " + document.getElementById("isim").title +" "+ "tarafından yapılmıştır.");
 			function disp_cmnt()
 			{
 				document.getElementById("isimtxt").innerHTML = document.getElementById("isim").value;
