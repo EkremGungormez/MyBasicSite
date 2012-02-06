@@ -14,7 +14,6 @@
 				<q title="Jean Baudrillard'nın arabalarla alakalı özlü sözü."> <i>Driving is a spectacular form of amnesia. Everything is to be discovered, everything to be obliterated.</i></q>
 			</div>
 			<hr class= "satirCizgisi"  />
-			
 			<div id="dvContent">
 				<div class="product">
 					<h2>
@@ -139,13 +138,14 @@
 							</tr>
 						</tbody>
 					</table>
+					
+					<p id = "isimtxt"></p>
+					<p id = "cmnt1"></p>
 				</form>
 			</div>
-			<p id = "isimtxt"></p>
-			<p id = "cmnt1"></p>
 		</div>	
 		<script type="text/javascript">
-			alert("Bu sayfa " + document.getElementById("meslek").title + " " + document.getElementById("isim").title +" "+ "tarafından yapılmıştır.");
+			alert("Bu sayfa " + document.getElementById("meslek").title + " " + document.getElementById("isim").title + " tarafından yapılmıştır.");
 			function disp_cmnt()
 			{
 				document.getElementById("isimtxt").innerHTML = document.getElementById("isim").value;

@@ -20,7 +20,7 @@ div.subproduct{padding: 1px;margin:5px auto;}
 table,td,thead{line-height:20px; color:#024E68; width:21%; border: 1px solid #024E68;}
 table#fiyat-listesi{width:26%;}
 table#yakit-tuketimi{margin-top:0.4cm;}
-table#TblDeger{width: 50%; border: 0px solid #024E68;}
+table#TblDeger{width: 35%; border: 0px solid #024E68;}
 td#cmb{vertical-align: middle;}
 td#cmnt{vertical-align: top;}
 thead{font-weight:bold;}
