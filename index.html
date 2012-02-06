@@ -132,19 +132,25 @@
 								<option>5</option>
 							</select></td></tr>
 							<tr>
-								<td id="cmnt">Yorum</td><td><textarea name="yorum" rows="5" cols="20"/></textarea></td></tr>
+								<td id="cmnt">Yorum</td><td><textarea  rows="5" cols="20" id="txtcmnt"></textarea></td></tr>
 							<tr>
 								<td></td>
-								<td><button type="button">Gönder</button></td>
+								<td><button type="button" onclick="disp_cmnt()">Gönder</button></td>
 							</tr>
 						</tbody>
 					</table>
 				</form>
 			</div>
+			<p id = "isimtxt"></p>
+			<p id = "cmnt1"></p>
 		</div>	
 		<script type="text/javascript">
-			alert("Bu sayfa " + document.getElementById("meslek").name + " " + document.getElementById("isim").name +" " + "tarafından yapılmıştır.");
-			
+			alert("Bu sayfa " + document.getElementById("meslek").name + " " + document.getElementById("isim").name +" "+ "tarafından yapılmıştır.");
+			function disp_cmnt()
+			{
+				document.getElementById("isimtxt").innerHTML = document.getElementById("isim").value;
+				document.getElementById("cmnt1").innerHTML = document.getElementById("txtcmnt").value;
+			}
 		</script>
 	</body>
 </html>
