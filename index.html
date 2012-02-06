@@ -121,9 +121,9 @@
 					<table id ="TblDeger">
 						<thead><b>Değerlendirme</b></thead>
 						<tbody>
-							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi"  /><br/></td></tr>
-							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" /></td></tr>
-							<tr><td>Sayfa Değerlendirme Notu</td><td id="cmb" >
+							<tr><td>Adınız</td><td><input type="text" placeholder ="Adınızı Giriniz..." class="yazi" value ="Ekrem" id= "isim" /><br/></td></tr>
+							<tr><td>Mesleğiniz</td><td ><input type="text" placeholder ="Mesleğinizi Giriniz..." class="yazi" id ="meslek" value ="Matematik Mühendisi" /></td></tr>
+							<tr><td>Sayfa Değerlendirme Notu</td><td id="cmb">
 							<select name="not">
 								<option>1</option>
 								<option>2</option>
@@ -141,6 +141,10 @@
 					</table>
 				</form>
 			</div>
-		</div>			
+		</div>	
+		<script type="text/javascript">
+			alert("Bu sayfa " + document.getElementById("meslek").value + " " + document.getElementById("isim").value +" " + "tarafından yapılmıştır.");
+			
+		</script>
 	</body>
 </html>
